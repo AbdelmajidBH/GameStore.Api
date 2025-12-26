@@ -1,0 +1,31 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+###
+GET http://localhost:5155/games
+
+###
+GET http://localhost:5155/games/6
+
+
+###
+POST http://localhost:5155/games
+Content-Type: application/json
+{
+    "name": "hunter X hunter",
+    "genre": "RPG",
+    "price": 100.99,
+    "realeaseDate": "2009-05-19"
+  }
+
+###
+PUT http://localhost:5155/games/6
+Content-Type: application/json
+{
+    "name": "hunter X hunter",
+    "genre": "RPG",
+    "price": 100.99,
+    "realeaseDate": "2021-10-10"
+}
+
+
+###
+DELETE http://localhost:5155/games/6
