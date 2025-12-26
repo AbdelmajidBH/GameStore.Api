@@ -2,5 +2,5 @@
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
   </Folder>
-  <Project Path="GameStore.App/GameStore.Api.csproj" />
+  <Project Path="GameStore.Api/GameStore.Api.csproj" />
 </Solution>
