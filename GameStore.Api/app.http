@@ -3,17 +3,17 @@
 GET http://localhost:5155/games
 
 ###
-GET http://localhost:5155/games/6
+GET http://localhost:5155/games/1
 
 
 ###
 POST http://localhost:5155/games
 Content-Type: application/json
 {
-    "name": "hunter X hunter",
-    "genre": "RPG",
-    "price": 100.99,
-    "realeaseDate": "2009-05-19"
+    "name": "hunter X hunter 2",
+    "genreId": 10,
+    "price": 50,
+    "realeaseDate": "2025-05-19"
   }
 
 ###

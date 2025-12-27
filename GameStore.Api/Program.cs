@@ -6,12 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddValidation();
 
-builder.Services
-    .AddDbContext<GameStoreContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("GameStoreConnection")));
+builder.ConfigureGameStoreDb();
 
 var app = builder.Build();
 
 app.MapGamesEndpoints();
+
+app.MigrateDatabase();
 
 await app.RunAsync();
